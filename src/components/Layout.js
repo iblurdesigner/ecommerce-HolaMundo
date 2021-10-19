@@ -17,10 +17,7 @@ const styles = {
 export default function Layout({children}) {
   return (
     <div style={styles.layout}>
-      <div style={styles.container}>
-        {children}
-        lala
-      </div>
+      <div style={styles.container}>{children}</div>
     </div>
   )
 }
