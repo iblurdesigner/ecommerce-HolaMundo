@@ -1,3 +1,6 @@
+import Carro from './Carro.js'
+import Logo from './Logo.js'
+
 const styles = {
   navbar: {
     display: 'flex',
@@ -10,11 +13,15 @@ const styles = {
   },
 }
 
-export default function Navbar() {
+export default function Navbar({carro, esCarroVisible, mostrarCarro}) {
   return (
     <nav style={styles.navbar}>
-      <p>Logo</p>
-      <p>Carro</p>
+      <Logo />
+      <Carro
+        carro={carro}
+        esCarroVisible={esCarroVisible}
+        mostrarCarro={mostrarCarro}
+      />
     </nav>
   )
 }

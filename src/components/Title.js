@@ -4,5 +4,5 @@ const styles = {
   },
 }
 export default function Title() {
-  return <h1 style={styles.title}>BuenDato</h1>
+  return <h2 style={styles.title}>Abarrotes</h2>
 }
